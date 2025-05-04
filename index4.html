@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARM.TRADING</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease;
+    }
+    header {
+      background-color: #33b5e5;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 5px solid #0288d1;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .lang-switch button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      background-color: #0288d1;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .lang-switch button:hover {
+      background-color: #0277bd;
+    }
+    section {
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      border-radius: 15px;
+    }
+    h1,
+    h2 {
+      color: #0288d1;
+    }
+    footer {
+      background-color: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      margin-top: 50px;
+    }
+    a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
+    }
+    .contact-person {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .contact-person img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #0288d1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ARM.TRADING</h1>
+    <p id="desc">شركة وساطة وتجارة عامة</p>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ar')">العربية</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('bs')">Bosanski</button>
+  </div>
+
+  <section id="about">
+    <h2 data-ar="من نحن" data-en="About Us" data-bs="O nama">من نحن</h2>
+    <p data-ar="شركة ARM.TRADING هي شركة وساطة وتجارة عامة تأسست عام 2024، تعمل في جميع المجالات التجارية دون حصر. نطمح لتحقيق المزيد من التبادل التجاري بين الأسواق الأوروبية والعربية."
+       data-en="ARM.TRADING is a general trading and brokerage company established in 2024, working across various commercial sectors. We aim to increase trade exchange between European and Arab markets."
+       data-bs="ARM.TRADING je kompanija za trgovinu i posredovanje osnovana 2024. godine, koja posluje u raznim komercijalnim sektorima. Naš cilj je povećanje trgovinske razmjene između evropskih i arapskih tržišta.">
+    </p>
+    <p data-ar="المالكين: محمد مشعلجي وعبدالرحيم"
+       data-en="Owners: Mohamad Mashalji and Abdulrahim"
+       data-bs="Vlasnici: Mohamad Mashalji i Abdulrahim"></p>
+  </section>
+
+  <section>
+    <h2 data-ar="تواصل معنا" data-en="Contact Us" data-bs="Kontaktirajte nas">تواصل معنا</h2>
+    <p><strong data-ar="البريد الإلكتروني:" data-en="Email:" data-bs="Email:"></strong> <a href="mailto:info@armtrading.com">info@armtrading.com</a></p>
+    <p><strong data-ar="العنوان:" data-en="Address:" data-bs="Adresa:"></strong> <span data-ar="البوسنة والهرسك – مدينة ماجلاي" data-en="Bosnia and Herzegovina – Maglaj" data-bs="Bosna i Hercegovina – Maglaj"></span></p>
+
+    <div class="contact-person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/32px-Flag_of_Sweden.svg.png" alt="Sweden" />
+      <p><strong data-ar="واتساب محمد مشعلجي:" data-en="WhatsApp Mohamad Mashalji:" data-bs="WhatsApp Mohamad Mashalji:"></strong> <a href="https://wa.me/46760694485" target="_blank">0046760694485</a></p>
+    </div>
+    <a class="whatsapp-button" href="https://wa.me/46760694485" target="_blank" data-ar="تواصل مع محمد مشعلجي عبر واتساب" data-en="Contact Mohamad Mashalji on WhatsApp" data-bs="Kontaktirajte Mohamada Mashaljija putem WhatsAppa">تواصل مع محمد مشعلجي عبر واتساب</a>
+
+    <form action="https://formspree.io/f/mvgaklzv" method="POST">
+      <input type="text" name="name" placeholder="الاسم / Name / Ime" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني / Email" required>
+      <textarea name="message" rows="5" placeholder="رسالتك / Your message / Vaša poruka" required></textarea>
+      <button type="submit" data-ar="أرسل" data-en="Send" data-bs="Pošalji">أرسل</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 ARM.TRADING - جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-ar]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+    }
+    setLanguage('ar');
+  </script>
+</body>
+</html>
